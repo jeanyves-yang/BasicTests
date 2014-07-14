@@ -9,7 +9,7 @@ add_executable(AddNumbers AddNumbers.cxx)
 add_library(AddNumbersLib STATIC AddNumbers.cxx)
 set_target_properties(AddNumbersLib PROPERTIES COMPILE_FLAGS "-Dmain=Number")
 
-option(BUILD_TESTING "Build the testing tree" OFF)
+option(BUILD_TESTING "Build the testing tree" ON)
 
 IF(BUILD_TESTING)
   include(CTest)
